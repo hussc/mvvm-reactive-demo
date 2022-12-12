@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginContentView" customModule="MVVM_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAx-VI-hqp">
+                    <rect key="frame" x="20" y="202" width="335" height="67.666666666666686"/>
+                    <string key="text">Hello
+Welcome back</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="i9x-Qc-uEn">
+                    <rect key="frame" x="20" y="293.66666666666669" width="335" height="80"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pbR-x4-OJN" customClass="DefaultTextField" customModule="MVVM_Demo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M57-cv-PMZ" customClass="DefaultTextField" customModule="MVVM_Demo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="46" width="335" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" textContentType="password"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJp-WP-QI5" customClass="PrimaryActionButton" customModule="MVVM_Demo" customModuleProvider="target">
+                    <rect key="frame" x="20" y="397.66666666666669" width="335" height="34.333333333333314"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Login"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wt-47-DNK" customClass="SecondaryActionButton" customModule="MVVM_Demo" customModuleProvider="target">
+                    <rect key="frame" x="20" y="444" width="335" height="34.333333333333314"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="New user? Register"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="New user? Register"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pixabay-logo" translatesAutoresizingMaskIntoConstraints="NO" id="8Uj-zI-38F">
+                    <rect key="frame" x="137.66666666666666" y="607" width="100" height="40"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="ea5-db-4AC"/>
+                        <constraint firstAttribute="height" constant="40" id="qzN-tw-WWY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="i9x-Qc-uEn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="03A-pm-pnn"/>
+                <constraint firstItem="i9x-Qc-uEn" firstAttribute="leading" secondItem="QAx-VI-hqp" secondAttribute="leading" id="0CZ-Xg-7ge"/>
+                <constraint firstItem="2wt-47-DNK" firstAttribute="centerX" secondItem="bJp-WP-QI5" secondAttribute="centerX" id="2XR-V6-vOA"/>
+                <constraint firstItem="i9x-Qc-uEn" firstAttribute="top" secondItem="QAx-VI-hqp" secondAttribute="bottom" constant="24" id="9At-TR-ofp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QAx-VI-hqp" secondAttribute="trailing" constant="20" id="GxQ-Q1-jTs"/>
+                <constraint firstItem="8Uj-zI-38F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="URG-zL-I3I"/>
+                <constraint firstItem="i9x-Qc-uEn" firstAttribute="centerX" secondItem="QAx-VI-hqp" secondAttribute="centerX" id="V5z-xm-30H"/>
+                <constraint firstItem="bJp-WP-QI5" firstAttribute="top" secondItem="i9x-Qc-uEn" secondAttribute="bottom" constant="24" id="X5O-F4-fdd"/>
+                <constraint firstItem="2wt-47-DNK" firstAttribute="top" secondItem="bJp-WP-QI5" secondAttribute="bottom" constant="12" id="bBc-Ws-Ccb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8Uj-zI-38F" secondAttribute="bottom" constant="20" id="fTF-aZ-Pxg"/>
+                <constraint firstItem="bJp-WP-QI5" firstAttribute="leading" secondItem="i9x-Qc-uEn" secondAttribute="leading" id="iWb-HP-Re0"/>
+                <constraint firstItem="2wt-47-DNK" firstAttribute="leading" secondItem="bJp-WP-QI5" secondAttribute="leading" id="kBn-hB-o7b"/>
+                <constraint firstItem="bJp-WP-QI5" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="m5V-Yz-H7y"/>
+                <constraint firstItem="QAx-VI-hqp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="nKG-2v-R9b"/>
+            </constraints>
+            <connections>
+                <outlet property="emailTextField" destination="pbR-x4-OJN" id="usH-Hy-5CC"/>
+                <outlet property="licenceImageView" destination="8Uj-zI-38F" id="iBq-Nf-QrR"/>
+                <outlet property="loginButton" destination="bJp-WP-QI5" id="tlc-6j-hm6"/>
+                <outlet property="passwordTextField" destination="M57-cv-PMZ" id="UIy-bI-lDl"/>
+                <outlet property="registerButton" destination="2wt-47-DNK" id="nG9-Gh-2G5"/>
+                <outlet property="titleLabel" destination="QAx-VI-hqp" id="DIK-gv-oNh"/>
+            </connections>
+            <point key="canvasLocation" x="46.564885496183201" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="M57-cv-PMZ">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="pbR-x4-OJN">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="pixabay-logo" width="640" height="123.87000274658203"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
